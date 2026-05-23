@@ -15,7 +15,7 @@ class App:
         self.data2026 = build_dataset_2026()
         # --- Matplotlib figure ---
         self.fig, self.ax = create_map()
-        self.lines = create_artists(self.ax, len(self.data2026))
+        self.lines = create_artists(self.ax, max(len(self.data2026),len(self.data2020)))
         
 
         self.ax.set_title("Year: 2020")

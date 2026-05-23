@@ -21,7 +21,7 @@ def load_airports(path: str) -> dict[str, Airport]:
     return airports
 
 
-def load_flights(path: str) -> list[FlightDest]:
+def load_flights(path: str) -> list[Flight]:
     flights = []
 
     with open(path, newline="") as f:
